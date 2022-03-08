@@ -1,0 +1,159 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Weather</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <nav class="navbar w-100 navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand ms-5" href="#">
+                        <i class="fas fa-cloud"></i>
+                        Weather</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active"aria-current="page"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Live cameras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">photo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"href="#">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="form w-75 mx-auto">
+                <input type="text" placeholder="Find your location..."
+                    class="search-input form-control mt-5">
+                <button class="btn btn-primary">Find</button>
+            </div>
+            <div class="container days">
+                <div class="row mt-md-5 pt-md-4">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="forecast-header p-md-2 d-flex
+                            justify-content-between" id="today">
+                            <div class="day ms-md-2"></div>
+                            <div class="date date me-md-2">
+                                <span class="test"></span>
+                                <span class="test2"></span>
+                            </div>
+                        </div>
+                        <div class="forecast-details h-100 w-100">
+                            <h6 class="town pt-md-3 ms-md-3"></h6>
+                            <div class="d-flex justify-content-between">
+                                <div class="temp num pt-md-3 ms-md-2"></div>
+                                <div class="forecast-icon">
+                                    <img class="pt-md-5 me-md-5 img-icon" src=""
+                                        alt="" width="90">
+                                </div>
+                            </div>
+                            <p class="cond pt-md-3 ms-md-3"></p>
+                            <div class="pb-md-3 icons">
+                                <span class="pt-md-3 ms-md-3"><img
+                                        src="image/icon-umberella.png"
+                                        class="me-md-2"alt="">20%</span>
+                                <span><img src="image/icon-wind.png"
+                                        class="me-md-2" alt="">18km/h</span>
+                                <span><img src="image/icon-compass.png"
+                                        class="me-md-2" alt="">East</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-4">
+                        <div class="forecast-header p-2 text-center" id="today">
+                            <div class="day day2 ms-md-2"></div>
+                        </div>
+                        <div class="forecast-details text-center h-100 w-100">
+                            <div class="sunday">
+                                <div class="forecast-icon">
+                                    <img class="day2-icon pt-md-5 me-md-5"
+                                        src="" alt="">
+                                </div>
+                                <div class="num day2-degree pt-md-3 ms-md-2"></div>
+                                <div class="num2 day2-mdegree pt-md-3 ms-md-2"></div>
+                            </div>
+                            <p class="day2-desc pt-md-3 ms-md-3"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-lg-4">
+                        <div class="forecast-header p-md-2 text-center"
+                            id="today">
+                            <div class="day day3 ms-md-2"></div>
+                        </div>
+                        <div class="forecast-details text-center h-100 w-100">
+                            <div class="sunday">
+                                <div class="forecast-icon">
+                                    <img class="day3-icon pt-md-5 me-md-5"
+                                        src="image/116.png" alt="">
+                                </div>
+                                <div class="num day3-degree pt-md-3 ms-md-2"></div>
+                                <div class="num2 day3-mdegree pt-md-3 ms-md-2"></div>
+                            </div>
+                            <p class="day3-desc pt-md-3 ms-md-3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="subscrieForm mt-5 mb-4 position-relative">
+                            <input type="text" class="w-100  rounded-pill border-0 bg_mainColor p-3"
+                                placeholder="Enter your email to subscribe...">
+                            <button
+                                class="rounded-pill subscribeBtn text-white border-0 px-4 py-2 position-absolute">subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="socialIcons text-lg-center mt-5 mb-4">
+                            <a href="#"><i class="fab fa-facebook-f"></i> </a>
+                            <a href="#"><i class="fab fa-twitter"></i> </a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i> </a>
+                            <a href="#"><i class="fab fa-pinterest"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyRight">
+                    Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
